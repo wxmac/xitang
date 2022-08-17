@@ -147,7 +147,6 @@ export const usePermissionStore = defineStore({
         }
         return;
       };
-
       switch (permissionMode) {
         case PermissionModeEnum.ROLE:
           routes = filter(asyncRoutes, routeFilter);
@@ -208,6 +207,9 @@ export const usePermissionStore = defineStore({
 
       routes.push(ERROR_LOG_ROUTE);
       patchHomeAffix(routes);
+
+      console.log('---->routes', routes);
+
       return routes;
     },
   },

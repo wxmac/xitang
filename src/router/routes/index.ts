@@ -17,7 +17,7 @@ Object.keys(modules).forEach((key) => {
 });
 
 export const asyncRoutes = [PAGE_NOT_FOUND_ROUTE, ...routeModuleList];
-
+console.error('asyncRoutes', asyncRoutes);
 export const RootRoute: AppRouteRecordRaw = {
   path: '/',
   name: 'Root',
@@ -43,4 +43,5 @@ export const basicRoutes = [
   ...mainOutRoutes,
   REDIRECT_ROUTE,
   PAGE_NOT_FOUND_ROUTE,
+  // ...asyncRoutes,
 ];

@@ -8,7 +8,8 @@ import { isFunction } from '/@/utils/is';
 import { cloneDeep } from 'lodash-es';
 import { ContentTypeEnum } from '/@/enums/httpEnum';
 import { RequestEnum } from '/@/enums/httpEnum';
-
+import { TOKEN_KEY } from '/@/enums/cacheEnum';
+import { getAuthCache } from '/@/utils/auth';
 export * from './axiosTransform';
 
 /**
